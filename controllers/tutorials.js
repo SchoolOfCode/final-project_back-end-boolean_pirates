@@ -6,7 +6,7 @@ export const getTutorials = async (req, res) => {
           title: 'Wind Turbine',
           likes: 200,
           youtubeUrl:
-            'https://cdn.vox-cdn.com/thumbor/AF96Bp-HCWW5FZtfLxtHsUTrnaM=/0x0:2040x1360/920x613/filters:focal(857x517:1183x843):format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/66546655/acastro_180403_1777_youtube_0002.0.jpg',
+          '/images/template.jpg',
           level: 'Beginner',
           materials: ['Aluminium, Steel'],
           instructions:
@@ -17,7 +17,7 @@ export const getTutorials = async (req, res) => {
           title: 'Solar fan',
           likes: 215,
           youtubeUrl:
-            'https://cdn.vox-cdn.com/thumbor/AF96Bp-HCWW5FZtfLxtHsUTrnaM=/0x0:2040x1360/920x613/filters:focal(857x517:1183x843):format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/66546655/acastro_180403_1777_youtube_0002.0.jpg',
+          '/images/template.jpg',
           level: 'Intermediate',
           materials: ['Aluminium, Steel'],
           instructions:
@@ -28,7 +28,7 @@ export const getTutorials = async (req, res) => {
           title: 'Solar Cooker',
           likes: 3000,
           youtubeUrl:
-            'https://cdn.vox-cdn.com/thumbor/AF96Bp-HCWW5FZtfLxtHsUTrnaM=/0x0:2040x1360/920x613/filters:focal(857x517:1183x843):format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/66546655/acastro_180403_1777_youtube_0002.0.jpg',
+          '/images/template.jpg',
           level: 'Expert',
           materials: ['Aluminium, Steel'],
           instructions:
