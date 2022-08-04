@@ -14,10 +14,20 @@ GET https://example.com/topics/1
 
 ###
 
-POST https://example.com/comments
+POST http://localhost:5000/tutorials
 content-type: application/json
 
 {
+    {
     "title": "sample",
-    "time": "Wed, 21 Oct 2015 18:27:50 GMT"
+    "instructions": "This is our instructions",
+    "ability": "beginner",
+    "creator": "joe",
+    "materials": ["wood", "string"],
+    "videoUrl": "http something",
+    "imageUrl": "http something",
+    "likes": ["user 1"],
+    "comments": ["comment1"],
+    "favourites": ["favourite1"]
+    }
 }

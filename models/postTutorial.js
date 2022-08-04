@@ -5,7 +5,10 @@ const tutorialSchema = mongoose.Schema({
     instructions: String,
     ability: String,
     creator: String,
-    materials: [String],
+    materials: {
+        type: [String],
+        default: [],
+    },
     videoUrl: String,
     imageUrl: String,
     likes: {
