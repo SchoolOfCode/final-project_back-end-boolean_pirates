@@ -8,9 +8,15 @@
 
 GET http://localhost:5000/tutorials
 
+
 ###
 
-GET https://example.com/topics/1
+GET http://localhost:5000/tutorials/62ebc582c43ca80407
+
+
+###
+DELETE http://localhost:5000/tutorials/62ebcbb85eec6cb5336a34
+
 
 ###
 
@@ -31,3 +37,4 @@ content-type: application/json
     "favourites": ["favourite1"]
     }
 }
+
