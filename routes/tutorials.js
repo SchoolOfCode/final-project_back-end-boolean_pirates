@@ -2,7 +2,7 @@ import express from "express";
 import {
 	getTutorials,
 	getTutorialsBySearch,
-	getTutorial,
+	getTutorialById,
 	createTutorial,
 	updateTutorial,
 	deleteTutorial,
@@ -14,7 +14,7 @@ const router = express.Router();
 
 router.get("/search", getTutorialsBySearch);
 
-router.get("/:id", getTutorial);
+router.get("/:id", getTutorialById);
 
 router.get("/", getTutorials);
 
