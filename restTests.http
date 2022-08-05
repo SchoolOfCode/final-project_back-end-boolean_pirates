@@ -37,3 +37,10 @@ content-type: application/json
     "favourites": ["like2", "like3", "like4", "like5", "like6", "like7", "like8"]
     }
 
+###
+PATCH http://localhost:5000/tutorials/62ecd7384e7aa5b700a0500f/likeTutorial
+content-type: application/json
+
+{
+    "userId" : "tass"
+}

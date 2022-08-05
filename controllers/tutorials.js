@@ -55,14 +55,40 @@ export const deleteTutorial = async (req, res) => {
   return res.status(404).send(`No tutorial with id ${id} found`)};
  try {
   await tutorialsSchema.findByIdAndRemove(id);
-  res.status(200).json({message: "Post is succesfully deleted"});
+  res.status(200).json({message: ""});
 } catch (error) {
   res.status(404).json({ message: error.message });
 }
 };
 
 // Like/unlike tutorial
-export const likeTutorial = async (req, res) => {};
+export const likeTutorial = async (req, res) => {
+	console.log(req.body)
+  const { id } = req.params
+  const {userId} = req.body
+  if(!mongoose.Types.ObjectId.isValid(id)){
+  return res.status(404).send(`No tutorial with id ${id} found`)};
+ try {
+  let post = await tutorialsSchema.findById(id);
+  let likes = post.likes
+  if (likes.includes(userId)) {
+    let index = likes.indexOf(userId)
+	likes.splice(index,1)
+	post.likes = likes
+	await tutorialsSchema.findByIdAndUpdate(id, post)
+   }
+   else{
+	likes.push(userId) 
+	post.likes = likes
+	await tutorialsSchema.findByIdAndUpdate(id, post)
+   }
+
+  res.status(200).json({message: "Post is succesfully deleted"});
+} catch (error) {
+  res.status(404).json({ message: error.message });
+}
+
+};
 
 // Comment post request
 export const commentTutorial = async (req, res) => {};
