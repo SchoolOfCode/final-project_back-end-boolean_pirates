@@ -6,27 +6,27 @@
 # Publisher: Huachao Mao
 # VS Marketplace Link: https://marketplace.visualstudio.com/items?itemName=humao.rest-client
 
-GET http://localhost:5000/tutorials
+GET https://backend-soc.herokuapp.com/tutorials
 
 
 ###
 
-GET http://localhost:5000/tutorials/62ebcb8b1771f364ce8d7805
+GET https://backend-soc.herokuapp.com/tutorials
 
 
 ###
-DELETE http://localhost:5000/tutorials/62ebcb8b1771f364ce8d7805
+DELETE https://backend-soc.herokuapp.com/tutorials
 
 
 ###
 
-POST http://localhost:5000/tutorials
+POST https://backend-soc.herokuapp.com/tutorials
 content-type: application/json
 
 
     {
-    "title": "Homemade Water Butt",
-    "instructions": "Made from larger water bottles that you can find in any supermarket.",
+    "title": "Homemade Water Fish",
+    "instructions": "make it make it make it.",
     "ability": "Intermediate",
     "creator": "Tass",
     "materials": ["plastic"],
