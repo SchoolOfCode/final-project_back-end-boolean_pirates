@@ -11,11 +11,11 @@ GET http://localhost:5000/tutorials
 
 ###
 
-GET http://localhost:5000/tutorials/62ebc582c43ca80407
+GET http://localhost:5000/tutorials/62ebcb8b1771f364ce8d7805
 
 
 ###
-DELETE http://localhost:5000/tutorials/62ebcbb85eec6cb5336a34
+DELETE http://localhost:5000/tutorials/62ebcb8b1771f364ce8d7805
 
 
 ###
@@ -23,18 +23,17 @@ DELETE http://localhost:5000/tutorials/62ebcbb85eec6cb5336a34
 POST http://localhost:5000/tutorials
 content-type: application/json
 
-{
+
     {
-    "title": "sample",
-    "instructions": "This is our instructions",
-    "ability": "beginner",
-    "creator": "joe",
-    "materials": ["wood", "string"],
-    "videoUrl": "http something",
-    "imageUrl": "http something",
-    "likes": ["user 1"],
-    "comments": ["comment1"],
-    "favourites": ["favourite1"]
+    "title": "Homemade Water Butt",
+    "instructions": "Made from larger water bottles that you can find in any supermarket.",
+    "ability": "Intermediate",
+    "creator": "Tass",
+    "materials": ["plastic"],
+    "videoUrl": "https://res.cloudinary.com/dcyovjaom/image/upload/v1659515150/sample.jpg",
+    "imageUrl": "https://res.cloudinary.com/dcyovjaom/image/upload/v1659515179/cld-sample-5.jpg",
+    "likes": ["user2", "user3", "user4", "user5", "user6", "user7", "user8"],
+    "comments": ["comment2", "comment3", "comment4", "comment5", "comment6", "comment7"],
+    "favourites": ["like2", "like3", "like4", "like5", "like6", "like7", "like8"]
     }
-}
 
