@@ -63,8 +63,9 @@ export const deleteTutorial = async (req, res) => {
 
 // Like/unlike tutorial
 export const likeTutorial = async (req, res) => {
-	console.log(req.params)
-  const { id, userId } = req.params
+	console.log(req.body)
+  const { id } = req.params
+  const {userId} = req.body
   if(!mongoose.Types.ObjectId.isValid(id)){
   return res.status(404).send(`No tutorial with id ${id} found`)};
  try {
