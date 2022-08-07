@@ -71,19 +71,18 @@ export const likeTutorial = async (req, res) => {
  try {
   let post = await tutorialsSchema.findById(id);
   let likes = post.likes
-  if (likes.includes(userId)) {
-    let index = likes.indexOf(userId)
-	likes.splice(index,1)
-	post.likes = likes
+  if (!likes.includes(userId)) {
+	likes.push(userId) 
 	await tutorialsSchema.findByIdAndUpdate(id, post)
    }
    else{
-	likes.push(userId) 
-	post.likes = likes
+	
+	let index = likes.indexOf(userId)
+	likes.splice(index,1);
 	await tutorialsSchema.findByIdAndUpdate(id, post)
    }
 
-  res.status(200).json({message: "Post is succesfully deleted"});
+  res.status(200).json({message: "Post is succesfully updated", likes});
 } catch (error) {
   res.status(404).json({ message: error.message });
 }
