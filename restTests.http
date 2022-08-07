@@ -38,9 +38,9 @@ content-type: application/json
     }
 
 ###
-PATCH http://localhost:5000/tutorials/62ecd7384e7aa5b700a0500f/likeTutorial
+PATCH http://localhost:5000/tutorials/62ecd87c4e7aa5b700a05013/likeTutorial
 content-type: application/json
 
 {
-    "userId" : "tass"
+    "userId" : "Tass2"
 }
