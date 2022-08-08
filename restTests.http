@@ -15,21 +15,20 @@ GET https://backend-soc.herokuapp.com/tutorials
 
 
 ###
-DELETE https://backend-soc.herokuapp.com/tutorials
+DELETE https://backend-soc.herokuapp.com/tutorials/62f0af05d2aa05b3911f09af
 
 
 ###
 
-POST https://backend-soc.herokuapp.com/tutorials
+POST http://localhost:5000/tutorials
 content-type: application/json
-
 
     {
     "title": "Homemade Water Fish",
     "instructions": "make it make it make it.",
     "ability": "Intermediate",
     "creator": "Tass",
-    "materials": ["plastic"],
+    "materials": ["plastic,wire,string"],
     "videoUrl": "https://res.cloudinary.com/dcyovjaom/image/upload/v1659515150/sample.jpg",
     "imageUrl": "https://res.cloudinary.com/dcyovjaom/image/upload/v1659515179/cld-sample-5.jpg",
     "likes": ["user2", "user3", "user4", "user5", "user6", "user7", "user8"],

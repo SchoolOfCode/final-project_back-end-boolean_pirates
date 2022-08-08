@@ -30,10 +30,11 @@ export const getTutorialsBySearch = async (req, res) => {};
 // Create Tutorial
 export const createTutorial = async (req, res) => {
 	const tutorials = req.body; //Whole
-
+	console.log(tutorials.materials[0].split(','))
 	const newTutorials = new tutorialsSchema({
 		...tutorials,
 		createdAt: new Date().toISOString(),
+		materials: tutorials.materials[0].split(',')
 	});
 
 	try {
@@ -55,7 +56,7 @@ export const deleteTutorial = async (req, res) => {
   return res.status(404).send(`No tutorial with id ${id} found`)};
  try {
   await tutorialsSchema.findByIdAndRemove(id);
-  res.status(200).json({message: ""});
+  res.status(200).json({message: "Post with ${id} deleted"});
 } catch (error) {
   res.status(404).json({ message: error.message });
 }
