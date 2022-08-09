@@ -26,6 +26,6 @@ router.delete("/:id", deleteTutorial);
 
 router.patch("/:id/likeTutorial", likeTutorial);
 
-router.post("/:id/commentPost", commentTutorial);
+router.patch("/:id/commentPost", commentTutorial);
 
 export default router;

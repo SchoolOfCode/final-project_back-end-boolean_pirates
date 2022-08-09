@@ -43,3 +43,13 @@ content-type: application/json
 {
     "userId" : "Tass2"
 }
+
+
+###
+PATCH http://localhost:5000/tutorials/62f10496c07fed5ddc8b481a/commentPost
+content-type: application/json
+
+{
+ "addComments" : "Test adding comments"
+
+}
