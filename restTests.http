@@ -15,7 +15,7 @@ GET https://backend-soc.herokuapp.com/tutorials
 
 
 ###
-DELETE https://backend-soc.herokuapp.com/tutorials/62f115fa270e76d402413422
+DELETE https://backend-soc.herokuapp.com/tutorials/62f21ec2077c651d613ca98c
 
 
 ###
