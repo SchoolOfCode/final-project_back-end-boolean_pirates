@@ -31,10 +31,9 @@ export const getTutorialsBySearch = async (req, res) => {}
 // Create Tutorial
 export const createTutorial = async (req, res) => {
   const tutorials = req.body //Whole
-  console.log(tutorials.materials.split(','))
   const newTutorials = new tutorialsSchema({
     ...tutorials,
-    createdAt: new Date().toISOString(),
+    creatdAt: new Date().toISOString(),
     materials: tutorials.materials.split(','),
   })
 
