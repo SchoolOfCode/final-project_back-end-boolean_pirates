@@ -1,2 +1,93 @@
-[![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-c66648af7eb3fe8bc4f294546bfd86ef473780cde1dea487d3c4ff354943c9ae.svg)](https://classroom.github.com/online_ide?assignment_repo_id=8157390&assignment_repo_type=AssignmentRepo)
-# final-project_back-end
+# Project Redeem Backend.
+
+This is the Backend of our final project for School Of Code, we were presented with the task of creating an app that would help a solve a problem. After some discussion we decided to create an Full Stack App with full CRD (our app didn't require update) funtionality that allowed users to post tutorials to help make a change to the world.
+
+The backend is deployed [here](https://backend-soc.herokuapp.com/)
+
+## To Run Locally:
+
+Clone the project
+
+```bash
+  git clone https://github.com/SchoolOfCode/final-project_back-end-boolean_pirates.git
+```
+
+Install dependencies
+
+```bash
+  npm i (or npm install)
+```
+
+Add environment variables
+
+```bash
+  full steps below
+```
+
+Start the server
+
+```bash
+  npm run dev
+```
+
+
+## Environment Variables
+
+Create a copy of the .env.example file then fill in those credentials with those for your own database and rename the file .env (dont forget to makesure youre gitignore has .env in it).
+## To Run the Tests:
+
+To run tests, run the following command
+
+```bash
+  npm run test
+```
+
+
+## Authors
+- [@Afam](https://github.com/afam-io)
+- [@danielknight261](https://github.com/danielknight261)
+- [@Harri](https://github.com/HairiBeast)
+- [@Tass](https://github.com/tassanee-atsa)
+- [@Jojok](https://github.com/JojokCreator)
+- [@Musy88](https://github.com/Musy88)
+
+
+
+## What is it?
+
+A complete backend that uses an ExpressJS HTTP server for Node.js and is set up to makes calls to a MongoDB Atlas multi-cloud database. The server uses Mongoose an object modeling tool designed to work in an asynchronous environment to "talk" to the database.
+
+The schema can be found in the models folder in postTutorials.js
+
+## API Reference
+
+#### GET ALL TUTORIALS
+
+```http
+  GET localhost:3000/tutorials
+```
+
+| Route     | Type     | Description                |
+| :-------- | :------- | :------------------------- |
+| `/users` | `GET` | GETs all the tutorials in the database |
+
+#### POST 
+
+```http
+  POST localhost:3000/tutorials
+```
+
+| Parameter | Type     | Description                       |
+| :-------- | :------- | :-------------------------------- |
+| `/users`      | `POST` | Creates a new tutorial |
+
+#### DELETE
+
+```http
+  DELETE localhost:3000/tutorials/:id
+```
+
+| Parameter | Type     | Description                       |
+| :-------- | :------- | :-------------------------------- |
+| `/users/:id`      | `DELETE` | Delete the user with the designated id |
+
