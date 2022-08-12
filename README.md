@@ -4,6 +4,8 @@ This is the Backend of our final project for School Of Code, we were presented w
 
 The backend is deployed [here](https://backend-soc.herokuapp.com/)
 
+The server is currently set to run on [http://localhost:5000](http://localhost:5000) but can be changed in the .env file.
+
 ## To Run Locally:
 
 Clone the project
@@ -36,7 +38,7 @@ Start the server
 Create a copy of the .env.example file then fill in those credentials with those for your own database and rename the file .env (dont forget to makesure youre gitignore has .env in it).
 ## To Run the Tests:
 
-To run tests, run the following command
+To run tests, run the following command.
 
 ```bash
   npm run test
