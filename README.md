@@ -67,9 +67,9 @@ The schema can be found in the models folder in postTutorials.js
   GET localhost:3000/tutorials
 ```
 
-| Route     | Type     | Description                |
-| :-------- | :------- | :------------------------- |
-| `/users` | `GET` | GETs all the tutorials in the database |
+| Route        | Type     | Description                |
+| :----------- | :------- | :------------------------- |
+| `/tutorials` | `GET` | GETs all the tutorials in the database |
 
 #### POST 
 
@@ -79,7 +79,7 @@ The schema can be found in the models folder in postTutorials.js
 
 | Parameter | Type     | Description                       |
 | :-------- | :------- | :-------------------------------- |
-| `/users`      | `POST` | Creates a new tutorial |
+| `/tutorials`      | `POST` | Creates a new tutorial |
 
 #### DELETE
 
@@ -89,5 +89,8 @@ The schema can be found in the models folder in postTutorials.js
 
 | Parameter | Type     | Description                       |
 | :-------- | :------- | :-------------------------------- |
-| `/users/:id`      | `DELETE` | Delete the user with the designated id |
+| `/tutorials/:id`      | `DELETE` | Delete the user with the designated id |
 
+## Authentication(work in progress)
+
+Our backend routes are currently unprotected and there are plans to protect them using the Auth0 authentication we implemented in the front-end using JWT authentication.
